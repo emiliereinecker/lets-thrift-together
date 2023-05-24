@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Title </title>
+    <!-- With this link I am linking HTML and CSS -->
+        <link rel="stylesheet" href="styles.css">
+</head>
+
+	<body>
+        <!-- I have added <div> so I can centre align the web page later -->
+        <div id="wrapper">
+        <!-- HTML provides 6 levels of headings: <h1>-<h6>. The higher the number, the less prominent heading -->
+        <!-- I wrap heading 1 with a <header> element to implement HTML structural elements. They inform browers about the meaning of the contents -->
+        <header>
+            <!-- By adding a hypertext reference to "index.html", we turn the website title into a link directing vistors back to the home page-->
+            <img src="images/img_banner.png" alt="Let´s thrift together logo" width="1200" height="200"> 
+            <h1><a href="index.html">Let´s Thrift Together</a></h1>
+        </header>
+        
+    <!-- =========== NAVIGATION ============== -->
+        <nav>
+            <!-- The anchor <a> element is used to define a hyperlink which is used to link to the 3 internal web pages -->
+            <!-- We add the attribute "href" to specify the destination -->
+            <!-- To improve the accesibility of the hyperlink I add another attribute called "title" -->
+            <a href="home.html" title="Home">Home</a>
+            <!-- The link of the <a> element to the corresponding page has been removed in order to make it less confusing as you are on the web page already-->
+            <a id="tips">Tips and Tricks</a>
+            <a href="benefits.html" title="Benefits">Benefits</a>
+            <a href="about.html" title="About Us">About Us</a>
+        </nav>
+    
+    <!-- ========= CONTENT AREA 1 ============ -->	
+        <article id="content-two">
+            <section>
+                <h3>Tip 1: Set a budget</h3>
+                    <p>This is especially applicable to curated vintage stores that tend to charge higher than charity shops, but it’s important to set a limit for yourself so you don’t get carried away. Just because the items are cheap, relatively speaking, doesn’t mean you can go overboard.</p>
+            </section>
+            
+            <section>
+                <h3>Tip 2: Do not rush through it</h3>
+                    <p>aking it easy will help you enjoy the experience and up your chances of finding something, so block enough time for your planned route and remember it’s a marathon not a sprint.</p>
+            </section>
+            
+            <section>
+                <h3>Tip 3: Get a clear idea of what you are looking for</h3>
+                    <p>Thrift shopping without a clear goal is like grocery shopping on an empty stomach. It’s doable but not ideal. Make a mental list of what you’re looking for based on what you already own. This will help keep you focused and on budget. In addition, save pictures of coveted gems and fashion inspiration on your phone for quick reference. This will make it easier for store clerks to help you locate specific garments or let you know if they have something similar on the racks.</p>
+            </section>
+            
+            <section>
+                <h3>Tip 4: Dress appropriately</h3>
+                    <p>Many thrift stores don’t have fitting rooms, so you might need to wear something you can easily slip secondhand clothing over to try on. Secondhand stores usually don’t offer refunds, so you want to make sure your clothing fits before you buy it.</p>
+            </section>
+            
+            <section>
+                <h3>Tip 5: Check clothes carefully</h3>
+                    <p>Check clothes for stains, loose threading, missing buttons and other potential problems. Be sure to turn items inside out, too, for a full assessment. If you’re considering an electronic purchase, plug it in to be sure it works. Even books should be scanned for missing or damaged pages. Any and all damage should be noted before making a purchase. Can you fix it?  Will it be worth the cost?</p>
+                    <p class="referencing">Know Ur Clothes. (n.d.). Top thrifting tips. Know Ur Clothes. https://www.knowurclothes.com/top-thrifting-tips/</p>
+            </section>
+        </article>
+            
+        
+    <!-- ========= SIDEBAR ============ -->	
+        <article id="three-columns">
+            <!-- Here I have added images that has been optimized for the web in PhotoShop. I have used Bicubic Sharper to make the images smaller for best image quality. The image format is JPEG since this is more suitable for natural images -->
+            <!-- In the <img> tag I have added the src attribute to specify the location of the images. The alt attribute is used to provide and alternate text for the images however my images is only for decoration so I have used an empty alt. Width and height attributes are used to tell the dimensions of the images -->
+            <aside>
+                <img src="images/img_tip1.jpg" alt="" width="360" height="270">
+                <p class="referencing">Macglip, R. (2020, may 31). The Future of Second-Hand Shopping After Coronavirus. Eco Warrior Princess.https://ecowarriorprincess.net/2020/05/future-second-hand-shopping-after-coronavirus-pandemic/</p>
+            </aside>
+            
+            <aside>
+                <img src="images/img_tip2.jpg" alt="" width="410" height="270">
+                <p class="referencing">Go to Shopping. (n.d.). Kids second hand store. Go to Shopping. https://superoxy.life/product_tag/21728888_.htmlpandemic/</p>
+            </aside>
+            
+            <aside>
+                <img src="images/img_tip3.jpg" alt="" width="430" height="270">
+                <p class="referencing">Parlade, G. (2019, october 16). This is what the ban on secondhand goods means for the circular economy. Nolisoli. https://nolisoli.ph/69038/sustainability-ban-secondhand-phones-clothes-mparlade-20191016/</p>
+            </aside>
+        </article>
+           
+            
+    <!-- ============= FOOTER ================ -->
+    
+     <footer>
+        <ul> 
+        <!-- Information about copyright, policy and address -->
+        <!-- To get the symbol of copyright, I have used the HTML copyright symbol &#169 -->
+        <li>&#169; Let´s Thrift Together</li>
+        <li>Privacy Policy</li>
+            <li>Contact us at: 
+            <!-- Here I have made an e-mail link by surrounding the e-mail address with the <a> element and href attribute with a value of a pseudo e-mail address with a preceding keyword, mailto -->
+            <a href="mailto:letsthrift@together.com">letsthrift@together.com</a></li>
+            <li>Find us at: 2 Bradfordstreet, Mount Lawley WA 6050</li>
+        </ul>
+        </footer>
+        
+</div>
+</body>
+</html>

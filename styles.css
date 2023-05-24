@@ -1,0 +1,265 @@
+/*
+COLOURS
+#000000 - black (for text)
+#00285d - dark blue
+#734f96 - dark lavender
+#fffdf3 - beige
+#ffffff - white
+#356d81 - dark teal
+*/
+
+/* Here I have imported the Google front called Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+
+
+/* GLOBAL STYLES 
+----------------------------------------
+*/
+
+body {
+    /* 16px is the standard default font size for websites */
+    font-size: 16px;
+    /* This is 300 as this is the bold weight based on the Google front I imported */
+    font-weight: 300;
+    /* The main font is Montserrat, whereas the backup font is sans-serif*/
+    font-family: "Montserrat", sans-serif;
+    /* This is the font color as referred to the hex colour code list */
+    color: #000000; /* black */ 
+    /* here I have removed the spave above the header */
+    margin: 0;
+}
+
+h1 {
+    /* 3em means 3 times the size of the current font */
+    font-size: 3em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+a {
+	color: #00008B; /* dark blue */
+}
+
+a:visited {
+	color: #734f96; /* dark lavender */
+}
+
+/* this is a class attribute specifying the style of referencing throughout my website */
+.referencing {
+    font-size: 0.5em;
+    padding: 0 0 20px;
+}
+
+
+/* HEADER
+----------------------------------------
+*/
+
+header {
+	background-color: #ffffff; /* white */
+    height: 200px;
+}
+
+header h1 {
+    /* this has been done in order to remove the title */
+	visibility: hidden;
+}
+
+#wrapper {
+    /* here we are setting the width of the website - fixed value */
+	width: 1200px;
+    /* here I centre align the layout. 0 is for top and bottom, whereas auto is a value for left and right */
+    margin: 0 auto;
+}
+
+header img {
+    /* relative means its natural position in the page */
+    position: relative;
+}
+
+/* NAVIGATION
+----------------------------------------
+*/
+
+nav {
+    background-color: #00285d; /* dark blue */
+    height: 40px;
+    /* padding is space added around an elements content. Here I add space to the top */
+    padding-top: 20px;
+    /* with this code I have centre aligned my text */
+    text-align: center;
+}
+
+/* normal unvisited link */
+nav a {
+    color: #ffffff; /* white */
+    /* here I have removed the default link style of underline */
+    text-decoration: none;
+    /* we add a padding property to set the spacing */
+    padding: 10px 70px 10px 70px;
+}
+
+/* visited link */
+nav a:visited {
+    color: #ffffff;
+}
+
+/* color when rolling over links */
+nav a:hover {
+    background-color: #356d81; /* dark teal */
+}
+
+#tips {
+    color: #ffffff;
+    background-color: #356d81;
+}
+
+#about {
+    color: #ffffff;
+    background-color: #356d81;
+}
+
+#benefits {
+    color: #ffffff;
+    background-color: #356d81;
+}
+
+
+/* CONTENT AREA 1
+----------------------------------------
+*/
+
+#content-one {
+    background-color: #fffdf3; /* beige */
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+#indexh2 {
+    margin-top: 50px;
+}
+
+#indexp {
+    margin: 40px 140px;
+}
+
+#indexa {
+	color: #000000; /* black */
+	text-decoration: none;
+	font-size: 0.8em;
+	border: 1px solid #000000;
+    padding: 4px 15px;
+}
+
+#content-two {
+    background-color: #fffdf3;
+    text-align: center;
+    padding: 50px 200px 50px;
+}
+
+#welcome {
+    background-color: #fffdf3;
+    text-align: center;
+    padding: 15px 200px 40px;
+}
+
+
+
+/* CONTENT AREA 2
+----------------------------------------
+*/
+
+#benefits-two {
+    background-color: #fffdf3;
+    text-align: center;
+    padding: 15px 200px 40px;
+}
+
+#youtube-video {
+    background-color: #fffdf3;
+    text-align: center;
+}
+
+
+/* CONTENT AREA 3
+----------------------------------------
+*/
+
+#blockquote {
+    text-align: center;
+    padding: 15px 60px 40px;
+}
+
+#shopping {
+    font-style: italic;
+}
+
+#anna {
+    font-size: 0.9em;
+}
+
+#three-sections {
+    background-color: #fffdf3;
+    text-align: center;
+    padding: 40px 250px 40px;
+}
+
+/* SIDEBAR
+----------------------------------------
+*/
+
+#two-columns {
+    /* here I have defined containers */
+    display: flex;
+    margin: 50px 30px;
+    text-align: center;
+}
+
+#column1 {
+    padding: 0 30px;
+}
+
+#column2 {
+    padding: 0 30px;
+}
+
+#column3 {
+    padding: 0 30px;
+}
+
+#column4 {
+    padding: 0 30px;
+}
+
+#three-columns {
+    display: flex;
+}
+
+
+/* FOOTER
+----------------------------------------
+*/
+
+footer {
+	font-size: 0.8em;
+}
+
+footer ul {
+	display: flex;
+	justify-content: center;
+}
+
+footer li {
+    /* this has been done to remove bullets */
+	list-style: none;
+	padding-right: 20px;
+}
+
+
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Title </title>
+    <!-- With this link I am linking HTML and CSS -->
+        <link rel="stylesheet" href="styles.css">
+</head>
+
+	<body>
+        <!-- I have added <div> so I can centre align the web page later -->
+        <div id="wrapper">
+        <!-- HTML provides 6 levels of headings: <h1>-<h6>. The higher the number, the less prominent heading -->
+        <!-- I wrap heading 1 with a <header> element to implement HTML structural elements. They inform browers about the meaning of the contents -->
+        <header>
+            <!-- By adding a hypertext reference to "index.html", we turn the website title into a link directing vistors back to the home page-->
+            <img src="images/img_banner.png" alt="Let´s thrift together logo" width="1200" height="200"> 
+            <h1><a href="index.html">Let´s Thrift Together</a></h1>
+        </header>
+        
+    <!-- =========== NAVIGATION ============== -->
+        <nav>
+            <!-- The anchor <a> element is used to define a hyperlink which is used to link to the 3 internal web pages -->
+            <!-- We add the attribute "href" to specify the destination -->
+            <!-- To improve the accesibility of the hyperlink I add another attribute called "title" -->
+            <a href="home.html" title="Home">Home</a>
+            <a href="tips.html" title="Tips and Tricks">Tips and Tricks</a>
+            <!-- The link of the <a> element to the corresponding page has been removed in order to make it less confusing as you are on the web page already-->
+            <a id="benefits">Benefits</a>
+            <a href="about.html" title="About Us">About Us</a>
+        </nav>
+            
+    <!-- =========== CONTENT AREA 1 ============== -->  
+        
+        <!-- Here I have added an image that has been optimized for the web in PhotoShop. I have used Bicubic Sharper to make the image smaller for best image quality. The image format is JPEG since this is more suitable for natural images -->
+        <!-- In the <img> tag I have added the src attribute to specify the location of the image. The alt attribute is used to provide and alternate text for the image however my image is only for decoration so I have used an empty alt. Width and height attributes are used to tell the dimensions of the image -->
+        <article>
+            <img src="images/img_about.jpg" alt="" width="1200" height="550">
+            <p class="referencing">Sjelhøj, J. (2022, may 16). Her kan du aflevere dit brugte tøj og få penge for det med det samme. Vi Unge. 
+            https://www.viunge.dk/stil-trends/mode/her-kan-du-aflevere-dit-brugte-toej-og-faa-penge-det-med-det-samme</p>
+        </article>
+            
+    
+    <!-- =========== CONTENT AREA 2 ============== -->  
+        <article id="benefits-two">
+            <h2>Why thrifting is better than shopping</h2>
+                <p>Thrifting or shopping secondhand is a great way to reduce your environmental footprint while finding some really cool and unique items that you wouldn’t be able to get elsewhere. Buying items brand new might not seem like it has a very big impact on the environment, but every small action counts. By shopping for things second hand, you are voting with your dollar as a consumer to not support the industries that cause pollution and tons of waste. Here are some of the many reasons why thrifting is better than buying new items. The creation of new things takes a lot of resources, especially in today’s world of fast fashion and hyper–consumerism. Some of these natural resources are being used at a rate that is faster than they can be produced and are non-renewable. When it comes to clothing, electronics, and other home goods, it takes a lot of water and energy to make these items. When you thrift something, you are not directly supporting the demand for new things to be made, and this has a positive impact since resources and energy were already used to create that item. Specific to clothing and textiles, less fabric is wasted, and the water footprint of an item becomes less since the life of the item is extended.</p>
+                <p class="referencing">Goodwill. (n.d.). Three reasons why thrifting is better for the environment. Goodwill. https://www.goodwill.org/blog/shop/three-reasons-why-thrifting-is-better-for-the-environment/</p>
+        </article>
+            
+    <!-- =========== CONTENT AREA 3 ============== -->  
+        
+        <!-- The blockquote element has been added to specify an area that is quoted from another source-->
+        <blockquote id="blockquote">
+            <!-- Here I have nested a <p> element for the quote text -->
+            <p id="shopping">"Shopping at a thrift store like Goodwill is a great way to find some pre-loved pieces that still have a lot of life in them".</p>
+            
+            <!-- Here I have nested a <p> element for the author name, business title and company. To put these on seperate lines while keeping them in the same paragraph I have used the line break <br> -->
+            <p id="anna">
+                Anna Peterson <br>
+                Thrift Shop Manager <br>
+                The Salvation Army
+            </p>
+            <p class="referencing">Goodwill. (n.d.). Three reasons why thrifting is better for the environment. Goodwill. https://www.goodwill.org/blog/shop/three-reasons-why-thrifting-is-better-for-the-environment/</p>
+        </blockquote>
+            
+    <!-- ============= FOOTER ================ -->
+    
+    <footer>
+        <ul> 
+        <!-- Information about copyright, policy and address -->
+        <!-- To get the symbol of copyright, I have used the HTML copyright symbol &#169 -->
+        <li>&#169; Let´s Thrift Together</li>
+        <li>Privacy Policy</li>
+            <li>Contact us at: 
+            <!-- Here I have made an e-mail link by surrounding the e-mail address with the <a> element and href attribute with a value of a pseudo e-mail address with a preceding keyword, mailto -->
+            <a href="mailto:letsthrift@together.com">letsthrift@together.com</a></li>
+            <li>Find us at: 2 Bradfordstreet, Mount Lawley WA 6050</li>
+        </ul>
+        </footer>
+        
+</div>
+</body>
+</html>

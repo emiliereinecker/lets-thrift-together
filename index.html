@@ -1,0 +1,96 @@
+<!-- Defines the version of HTML 5 -->
+<!DOCTYPE html>
+
+<!-- Tells browsers that is is a web page -->
+<html>
+    
+    <!-- The nested pair of <head> tags contains information about the web page which is visible only to browsers -->
+    <head>
+        <!-- The <meta> element provides information about the information contained within an HTML document -->
+        <meta charset="UTF-8">
+        <!-- The nested title provide information about the web page -->
+        <title>Let´s Thrift Together</title>                       <!-- With this link I am linking HTML and CSS -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <!-- Contains information visible content of the web page -->
+    <body>
+        <!-- I have added <div> so I can centre align the web page later -->
+        <div id="wrapper">
+        <!-- HTML provides 6 levels of headings: <h1>-<h6>. The higher the number, the less prominent heading -->
+        <!-- I wrap heading 1 with a <header> element to implement HTML structural elements. They inform browers about the meaning of the contents -->
+        <header>
+            <img src="images/img_banner.png" alt="Let´s thrift together logo" width="1200" height="200">
+            <h1>Let´s Thrift Together</h1>
+        </header>
+        
+<!-- =========== NAVIGATION ============== -->
+        <nav>
+            <!-- The anchor <a> element is used to define a hyperlink which is used to link to the 3 internal web pages -->
+            <!-- We add the attribute "href" to specify the destination -->
+            <!-- To improve the accesibility of the hyperlink I add another attribute called "title" -->
+            <a href="home.html" title="Home">Home</a>
+            <a href="tips.html" title="Tips and Tricks">Tips and Tricks</a>
+            <a href="benefits.html" title="Benefits">Benefits</a>
+            <a href="about.html" title="About Us">About Us</a>
+        </nav>
+
+
+    
+<!-- The content inside <main> element is unique to this particular web page -->
+<main>
+<!-- ========= CONTENT AREA 1 ============ -->
+    <!-- The <article> element has been used to represent a self-contained composition -->
+    <article id="content-one">
+        <h2 id="indexh2">What´s new</h2>
+        <!-- The <p> tag defines text as paragraphs. I have added text from a random source -->
+            <p id="indexp">Thrift shopping is having a moment. More and more people are giving pre-loved clothing a second chance at life and for a good reason. Not only can great quality pieces be found for too-good-to-be-true prices, but by buying secondhand, we’re keeping still-wearable garments out of the landfill. Plus, who doesn’t love a good thrift shop find?To help you make the most out of your next thrift shopping excursion, here are seven tips on how to thrift shop like a boss. By following some of our go-to thrifting tips, you may just walk away with unique threads for amazing deals. Can’t beat feeling like a million bucks when you’re spending far, far less.</p>
+        
+            <!-- Class has been used here as references are needed serveral times throughout my website and this is used to point to the style sheet -->
+            <p class="referencing">E. Kathleen (2022, november 7). How to shop at thrift stores for second hand clothing. The Good Trade. https://www.thegoodtrade.com/features/thrift-shopping-tips/</p>
+        
+            <!-- Here I have added an external link after the article paragraph. In the <a> element I have inserted a href attribute to set the link destination, a title to describe the link, "Learn more" as a link label, a rel attribute to render the link as an external link and the target attribute to open the external link in a new window -->
+            <a id="indexa" href="http://www.ecu.edu.au" title="What´s new in the thrift community" rel="external" target="_blank">Learn more</a>
+    </article>
+</main>
+
+<!-- ========= SIDEBAR ============ -->	
+    <article id="two-columns"> 
+        <!-- The <aside> element has been used to represent an area of the web page that is associated to but not directly related to the main content -->
+        <aside id="column1">
+        <h3>How to: Find the best pieces</h3>
+            <p>Budget confession: I used to have a bad Nordstrom habit. Needless to say, I had no interest in thrifting tips back in those days. Although I had a solid income in my 20’s, the money seemed to flow in one hand and out the other. Poof! I blamed my lack of funds on my “love for fashion.” Years into wondering where my money was going, it was time to confront a hard truth: My clothes spending was getting the best of me. Can you relate?</p>
+            <p class="referencing">Hudson, E. (2022, june 2). 6 Thrifting Tips for Shopping on a Budget. YNAB. https://www.ynab.com/6-thrifting-tips-for-shopping-on-a-budget/</p>
+            <!-- Here I have added images that has been optimized for the web in PhotoShop. I have used Bicubic Sharper to make the images smaller for best image quality. The image format is JPEG since this is more suitable for natural images -->
+            <!-- In the <img> tag I have added the src attribute to specify the location of the images. The alt attribute is used to provide and alternate text for the images however my images is only for decoration so I have used an empty alt. Width and height attributes are used to tell the dimensions of the images -->
+            <img src="images/img_find.jpg" alt="" width="500" height="285">
+            <p class="referencing">Visit Copenhagen (n.d.) Planlæg din tur. Visit Copenhagen.https://www.visitcopenhagen.dk/koebenhavn/planlaeg-din-tur/veras-market-under-buen-gdk1116964</p>
+        </aside>
+        
+        <aside id="column2">
+        <h3>How to: Start thrifting</h3>
+            <p>DFaness, another YNAB customer support representative, agrees on the importance of being fueled. When she goes shopping with her family, she says, “We can easily hop between several stores, and the hanger [hunger + anger] sets in if we don’t stop for a sandwich. It also gives you some time to recoup between stores. Thrifting is basically like hiking, but instead of mountain views you get discounts. Just like taking a trek, be sure to wear comfortable shoes and bring water.”</p>
+            <p class="referencing">Hudson, E. (2022, june 2). 6 Thrifting Tips for Shopping on a Budget. YNAB. https://www.ynab.com/6-thrifting-tips-for-shopping-on-a-budget/</p>
+            <img src="images/img_start.jpg" alt="" width="500" height="285">
+            <p class="referencing">Sandvad, H. C. (2021, october 31). Genbrugstøj rykker ind i tidligere outlet-butik: Her kan man få tøj, der skiller sig ud. Horsens Folkeblad. https://hsfo.dk/braedstrup/genbrugstoej-rykker-ind-i-tidligere-outlet-butik-her-kan-man-faa-toej-der-skiller-sig-ud</p>
+        </aside>
+    </article>
+
+
+<!-- ============= FOOTER ================ -->
+    
+    <footer>
+        <ul> 
+        <!-- Information about copyright, policy and address -->
+        <!-- To get the symbol of copyright, I have used the HTML copyright symbol &#169 -->
+        <li>&#169; Let´s Thrift Together</li>
+        <li>Privacy Policy</li>
+            <li>Contact us at: 
+            <!-- Here I have made an e-mail link by surrounding the e-mail address with the <a> element and href attribute with a value of a pseudo e-mail address with a preceding keyword, mailto -->
+            <a href="mailto:letsthrift@together.com">letsthrift@together.com</a></li>
+            <li>Find us at: 2 Bradfordstreet, Mount Lawley WA 6050</li>
+        </ul>
+        </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Title </title>
+    <!-- With this link I am linking HTML and CSS -->
+        <link rel="stylesheet" href="styles.css">
+</head>
+
+	<body>
+        <!-- I have added <div> so I can centre align the web page later -->
+        <div id="wrapper">
+        <!-- HTML provides 6 levels of headings: <h1>-<h6>. The higher the number, the less prominent heading -->
+        <!-- I wrap heading 1 with a <header> element to implement HTML structural elements. They inform browers about the meaning of the contents -->
+        <header>
+            <!-- By adding a hypertext reference to "index.html", we turn the website title into a link directing vistors back to the home page-->
+            <img src="images/img_banner.png" alt="Let´s thrift together logo" width="1200" height="200"> 
+            <h1><a href="index.html">Let´s Thrift Together</a></h1>
+        </header>
+    
+    <!-- =========== NAVIGATION ============== -->
+        <nav>
+            <!-- The anchor <a> element is used to define a hyperlink which is used to link to the 3 internal web pages -->
+            <!-- We add the attribute "href" to specify the destination -->
+            <!-- To improve the accesibility of the hyperlink I add another attribute called "title" -->
+            <a href="home.html" title="Home">Home</a>
+            <a href="tips.html" title="Tips and Tricks">Tips and Tricks</a>
+            <a href="benefits.html" title="Benefits">Benefits</a>
+            <!-- The link of the <a> element to the corresponding page has been removed in order to make it less confusing as you are on the web page already-->
+            <a id="about">About Us</a>
+        </nav>
+            
+        
+    <!-- =========== CONTENT AREA 1 ============== -->  
+        <article id="welcome">
+            <h2>Welcome!</h2>
+                <p>When I moved to Sydney in 2018 with only two suitcases (one of which is full of Indonesian spices), I promised myself that I would only shop secondhand for my home and wardrobe. Globally, we throw out about 64% of items we bought, so surely there's something out there for me? But this turned out to be a much bigger task than I thought. It took me forever to browse through op shops. I tried online marketplaces but it was so unreliable. Don't ask me how many times I was ghosted by sellers. Once a guy verbally harrassed me because he couldn't find our meeting location (I'm sorry you can't read maps, my dude..) Long story short, I felt punished for wanting to reuse. So I set out to make secondhand shopping a much better experience for everyone with SwapUp.</p>
+                <p class="referencing">Swap Up. (n.d.). Our story. Swap Up. https://swapup.com.au/pages/our-story</p>
+        </article>
+    
+    <!-- =========== CONTENT AREA 2 ============== --> 
+            
+    <section id="youtube-video">
+        <!-- Here I have inserted a "mashup" streaming video that is live on the web-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YfiHTCv803s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        
+        <p>Please click here to view the
+            <a href src="https://www.youtube.com/embed/YfiHTCv803s"> video on YouTube</a>
+        </p>
+        </iframe>
+    </section>
+            
+    <!-- =========== CONTENT AREA 3 ============== -->  
+        <article id="three-sections">
+            <section>
+                <h3>Mission Driven</h3>
+                    <p>Our goal is to play a role in making sustainability ubiquitous. While we promote progress over perfection, we only support organisations and people that are genuinely focused on doing better.</p>
+            </section>
+            
+            <section>
+                <h3>Reliable</h3>
+                    <p>Integrity, truth, science and research is at the centre of our work. Our readers’ trust is of utmost importance to us.</p>
+            </section>
+            
+            <section>
+                <h3>Fun and Optimistic</h3>
+                    <p>Eco anxiety is tough… so we’re taking a lighter approach. We aim to get a chuckle out of our readers every now and then.</p>
+            </section>
+            <p class="referencing">Sustainable Jungle. (n.d.). Welcome! Sustainable Jungle. https://www.sustainablejungle.com/aboutus/</p>
+        </article>
+            
+    
+    <!-- ============= FOOTER ================ -->
+    
+    <footer>
+        <ul> 
+        <!-- Information about copyright, policy and address -->
+        <!-- To get the symbol of copyright, I have used the HTML copyright symbol &#169 -->
+        <li>&#169; Let´s Thrift Together</li>
+        <li>Privacy Policy</li>
+            <li>Contact us at: 
+            <!-- Here I have made an e-mail link by surrounding the e-mail address with the <a> element and href attribute with a value of a pseudo e-mail address with a preceding keyword, mailto -->
+            <a href="mailto:letsthrift@together.com">letsthrift@together.com</a></li>
+            <li>Find us at: 2 Bradfordstreet, Mount Lawley WA 6050</li>
+        </ul>
+        </footer>
+            
+</div>
+</body>
+</html>
